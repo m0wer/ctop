@@ -76,7 +76,7 @@ docker run --rm -ti \
   --name=ctop \
   --volume /var/run/docker.sock:/var/run/docker.sock:ro \
   -e XDG_CONFIG_HOME=/conf \
-  -v /custom/ctop_conf/:/conf/ctop/ \
+  -v ctop_conf:/conf/ctop/ \
   quay.io/vektorlab/ctop:latest
 ```
 
